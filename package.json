@@ -1,0 +1,17 @@
+{
+  "name": "uls-cyberlab-docs",
+  "version": "1.0.0",
+  "description": "Documentación oficial de ULS CyberLab - Mini Laboratorio de Hacking Ético",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.32.0",
+    "astro": "^5.0.0"
+  }
+}

@@ -1,0 +1,98 @@
+/* Google Fonts import - must be first */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ULS CyberLab - Custom Starlight Theme */
+:root {
+  --sl-color-accent-low: #003d1a;
+  --sl-color-accent: #00cc66;
+  --sl-color-accent-high: #00ff88;
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #eceef2;
+  --sl-color-gray-2: #c0c2c7;
+  --sl-color-gray-3: #888b96;
+  --sl-color-gray-4: #545861;
+  --sl-color-gray-5: #353841;
+  --sl-color-gray-6: #1f2229;
+  --sl-color-black: #0a0e1a;
+  --sl-font: 'Inter', sans-serif;
+  --sl-font-mono: 'Fira Code', monospace;
+}
+
+/* Dark mode overrides */
+:root[data-theme='dark'] {
+  --sl-color-bg: #0a0e1a;
+  --sl-color-bg-nav: #0d1221;
+  --sl-color-bg-sidebar: #0d1221;
+  --sl-color-hairline-light: #1a2040;
+  --sl-color-hairline: #1a2040;
+}
+
+/* Sidebar styling */
+.sidebar-content {
+  background: var(--sl-color-bg-sidebar);
+}
+
+/* Code blocks - terminal style */
+.expressive-code pre {
+  background: #0d1117 !important;
+  border: 1px solid #00cc6633;
+  border-radius: 8px;
+}
+
+/* Custom badge colors */
+.badge-danger {
+  background: #ff4444;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.badge-warning {
+  background: #ffaa00;
+  color: black;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.badge-success {
+  background: #00cc66;
+  color: black;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+/* Flag display */
+.flag-code {
+  font-family: var(--sl-font-mono);
+  background: #003d1a;
+  color: #00ff88;
+  border: 1px solid #00ff88;
+  padding: 4px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+/* Hero gradient for landing page */
+.hero {
+  background: linear-gradient(135deg, #0a0e1a 0%, #0d1221 50%, #001a0d 100%);
+}
+
+/* Table improvements */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: var(--sl-color-accent-low);
+  color: var(--sl-color-accent-high);
+}
+
+/* Fonts are imported at the top of this file */

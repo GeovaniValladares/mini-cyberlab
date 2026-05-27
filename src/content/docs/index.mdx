@@ -1,0 +1,80 @@
+---
+title: ULS CyberLab
+description: Mini Laboratorio de Hacking Ético para la FESOL 2026 - Universidad Luterana Salvadoreña
+template: splash
+hero:
+  tagline: Mini Laboratorio de Hacking Ético · FESOL 2026 · Universidad Luterana Salvadoreña
+  image:
+    file: ../../assets/hero.svg
+  actions:
+    - text: Comenzar →
+      link: /introduccion/
+      icon: right-arrow
+      variant: primary
+    - text: Ver Laboratorios
+      link: /laboratorios/
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, Badge } from '@astrojs/starlight/components';
+
+## ¿Qué es ULS CyberLab?
+
+**ULS CyberLab** es una plataforma educativa de **hacking ético** desarrollada para la **Feria del Software Libre (FESOL) 2026** de la Universidad Luterana Salvadoreña. Simula un entorno web **deliberadamente vulnerable** donde los estudiantes practican técnicas reales de seguridad informática en un ambiente controlado y seguro.
+
+:::danger[⚠️ Advertencia Importante]
+Esta plataforma contiene **vulnerabilidades intencionales** con fines educativos. **NUNCA** debe exponerse a internet ni usarse en redes de producción. Úsela únicamente en `localhost` o en redes de laboratorio aisladas.
+:::
+
+<CardGrid>
+  <Card title="🧪 4 Laboratorios" icon="puzzle">
+    SQL Injection, XSS, File Upload y Brute Force con retos prácticos y banderas CTF.
+  </Card>
+  <Card title="🚩 7 Flags CTF" icon="star">
+    Sistema de captura de banderas con puntuación, scoreboard y detección automática.
+  </Card>
+  <Card title="📊 Dashboard en Tiempo Real" icon="information">
+    Panel de control con logs de seguridad en vivo, estadísticas y clasificación de jugadores.
+  </Card>
+  <Card title="🎓 Enfoque Educativo" icon="open-book">
+    Diseñado para aprender, no para atacar. Cada vulnerabilidad incluye contexto teórico y contramedidas.
+  </Card>
+</CardGrid>
+
+## Módulos del Laboratorio
+
+| Módulo | Vulnerabilidad | Flag | Puntos |
+|--------|---------------|------|--------|
+| Login | SQL Injection (Bypass) | `FLAG{SQL_1NJ3CT10N_M4ST3R}` | 10 pts |
+| SQLi Lab | SQL Injection (UNION) | `FLAG{UN10N_S3L3CT_PR0}` | 20 pts |
+| XSS Lab | Reflected XSS | `FLAG{XSS_R3FL3CT3D}` | 10 pts |
+| XSS Lab | Stored XSS | `FLAG{XSS_ST0R3D_PWN3D}` | 20 pts |
+| Upload Lab | Webshell Upload | `FLAG{W3BSH3LL_UPL04D3D}` | 25 pts |
+| Brute Force | Sin Rate Limiting | `FLAG{BRUT3_F0RC3_K1NG}` | 15 pts |
+| CTF Bonus | Challenge Final | `FLAG{ULS_CYB3RL4B_W1NN3R}` | 50 pts |
+
+**Total: 150 puntos posibles**
+
+## Inicio Rápido
+
+```bash
+# 1. Copia el proyecto a XAMPP
+# Coloca la carpeta en: C:\xampp\htdocs\mini-cyberlab\
+
+# 2. Inicia XAMPP (Apache + MySQL)
+
+# 3. Importa la base de datos en phpMyAdmin
+# Archivo: sql/setup.sql
+
+# 4. Abre en el navegador
+http://localhost/mini-cyberlab/
+```
+
+**Credenciales por defecto:**
+- `admin` / `password` (Administrador)
+- `estudiante` / `password` (Estudiante)
+
+---
+
+*Desarrollado con ❤️ para FESOL 2026 · Universidad Luterana Salvadoreña · Curso de Seguridad Informática*
